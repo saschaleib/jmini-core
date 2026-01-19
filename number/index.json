@@ -1,0 +1,12 @@
+[
+	{	"id": "number_tobytesstring",
+		"name": ".toBytesString",
+		"namehtml": "&lt;<i>Number</i>&gt;.<b>toBytesString</b>()",
+		"type": "prototype",
+		"desc": "Converts a number to a formatted bytes sting using KiB, MiB, etc.",
+		"file": "Number.toBytesString",
+		"requires": [],
+		"conflics": [],
+		"moreinfo": "toolbox/numbers/tobytesstring/index"
+	}
+]

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>String.right() — jMini Test</title>
+		<script src="String.right.js"></script>
+		<script src="../events/Document.onReady.min.js"></script>
+		<script src="../elements/HTMLElement.new.min.js"></script>
+		<script src="../elements/Element.appendNew.min.js"></script>
+		<script src="../elements/Element.setText.min.js"></script>
+		<script src="../page/page_core.min.js"></script>
+		<script src="../page/page_console.min.js"></script>
+		<link href="../page/console.css" rel="stylesheet" type="text/css" media="all">
+		<script>
+
+			$p.console.init = function(parent) {
+				// prepare the console:
+				this.setTarget(document.getElementById('console'));
+			}
+
+			$p.test = {
+				init: function() {
+					$p.console.info('Testing the <String>.right() method:');
+					
+					// set a test string:
+					const t1 = "Lorem ipsum";
+					
+					$p.console.group("Without padding:");
+					$p.console.log('1. “Lorem ipsum”.right(0) = “' + t1.right(0) + '”');
+					$p.console.log('2. “Lorem ipsum”.right(1) = “' + t1.right(1) + '”');
+					$p.console.log('3. “Lorem ipsum”.right(5) = “' + t1.right(5) + '”');
+					$p.console.log('4. “Lorem ipsum”.right(15) = “' + t1.right(15) + '”');
+					$p.console.groupEnd();
+
+					$p.console.group("With “-” as padding character:");
+					$p.console.log('1. “Lorem ipsum”.right(0, "-") = “' + t1.right(0, '-') + '”');
+					$p.console.log('2. “Lorem ipsum”.right(1, "-") = “' + t1.right(1, '-') + '”');
+					$p.console.log('3. “Lorem ipsum”.right(5, "-") = “' + t1.right(5, '-') + '”');
+					$p.console.log('4. “Lorem ipsum”.right(15, "-") = “' + t1.right(15, '-') + '”');
+					$p.console.groupEnd();
+					
+					$p.console.group("Hexadecimal test:");
+					$p.console.log('1. “12.toString(16).right(2, "0") = “' + Number(12).toString(16).right(2, '0') + '”');
+					$p.console.log('2. “12.toString(16).right(4, "0") = “' + Number(12).toString(16).right(4, '0') + '”');
+					$p.console.log('3. “12.toString(16).right(8, "0") = “' + Number(12).toString(16).right(8, '0') + '”');
+					$p.console.groupEnd();
+					
+					/* done. */
+				}
+			}
+			
+		</script>
+	</head>
+	<body>
+		<h1>Tests: String.right()</h1>
+		<main>
+			<p>Logging tests to the in-page console:</p>
+			<div id="console"></div>
+		</main>
+		<footer>
+			<p>See page source for the test code and the browser console for additional info.</p>
+		</footer>
+	</body>
+</html>

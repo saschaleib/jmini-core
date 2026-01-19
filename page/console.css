@@ -42,6 +42,7 @@
 				min-width: fit-content;
 				padding: .25em;
 				border-bottom: #999 solid 1px;
+				box-sizing: border-box;
 			}
 			&.info {
 				color: #5C5C5F;
@@ -58,13 +59,21 @@
 				content: '\26A0 ';
 				color: #BE9B00;
 			}
-			&.error {
+			&.error, &.assert_fail {
 				background-color: #FDF2F5;
 				color: #A4000F;
 			}
 			&.error::before {
 				content: '\2B23 ';
 				color: #D70022;
+			}
+			&.assert_pass::before {
+				content: '\2705 ';
+				color: #16C60C;
+			}
+			&.assert_fail::before {
+				content: '\274C ';
+				color: #F03A17;
 			}
 		}
 	}

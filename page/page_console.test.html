@@ -51,6 +51,11 @@
 					$p.console.log("Nestled groups are also possible.");
 					$p.console.groupEnd();
 					
+					$p.console.group('Assertions');
+					$p.console.assert(true, 'Met assertion:', 'test');
+					$p.console.assert(false, 'failed assertion:', 'test');
+					$p.console.groupEnd();
+
 					$p.console.log('After the group.');
 					$p.console.info("End of console log.");
 

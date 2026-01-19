@@ -124,7 +124,9 @@ $p.console = {
 			console.groupEnd();
 		}
 
+	},
+
+	assert: function(assertion, ...msg) {
+		$p.console._log('assert_' + ( assertion ? 'pass' : 'fail' ) , msg.join(' '));
 	}
-
-
 }

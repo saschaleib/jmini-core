@@ -1,0 +1,22 @@
+[
+	{	"id": "string_right",
+		"name": "String.right",
+		"namehtml": "String.<b>right</b>()",
+		"type": "prototype",
+		"desc": "returns the n rightmost characters in a string",
+		"file": "String.right",
+		"requires": [],
+		"conflics": [],
+		"moreinfo": "toolbox/string/string_right/index"
+	},
+	{	"id": "string_totitlecase",
+		"name": "String.toTitleCase",
+		"namehtml": "String.<b>toTitleCase</b>()",
+		"type": "prototype",
+		"desc": "Converts each word in a sentence to Title Case",
+		"file": "String.toTitleCase",
+		"requires": [],
+		"conflics": [],
+		"moreinfo": "toolbox/string/string_totitlecase/index"
+	}
+]

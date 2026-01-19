@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>String.toTitleCase() — jMini Test</title>
+		<script src="String.toTitleCase.js"></script>
+		<script src="../events/Document.onReady.min.js"></script>
+		<script src="../elements/HTMLElement.new.min.js"></script>
+		<script src="../elements/Element.appendNew.min.js"></script>
+		<script src="../elements/Element.setText.min.js"></script>
+		<script src="../page/page_core.min.js"></script>
+		<script src="../page/page_console.min.js"></script>
+		<link href="../page/console.css" rel="stylesheet" type="text/css" media="all">
+		<script>
+
+			$p.console.init = function(parent) {
+				// prepare the console:
+				this.setTarget(document.getElementById('console'));
+			}
+
+			$p.test = {
+				init: function() {
+					
+					// set a test string:
+					const t1 = "Lorem ipsum";
+					
+					$p.console.group("Tests:");
+					$p.console.log('1. “lorem ipsum dolor sit amet”.toTitleCase() = “'
+						+ "lorem ipsum dolor sit amet".toTitleCase() + '”');
+					$p.console.log('2. “LATIN CAPITAL LETTER J”.toTitleCase() = “'
+						+ "LATIN CAPITAL LETTER J".toTitleCase() + '”');
+					$p.console.log('3. “οἱ δὲ φοίνιϰες οὗτοι οἱ σὺν κάδμῳ ἀπιϰόμενοι”.toTitleCase() = “'
+						+ "οἱ δὲ φοίνιϰες οὗτοι οἱ σὺν κάδμῳ ἀπιϰόμενοι".toTitleCase() + '”');
+					$p.console.log('4. “bсички хора се раждат свободни”.toTitleCase() = “'
+						+ "bсички хора се раждат свободни".toTitleCase() + '”');
+					$p.console.groupEnd();
+
+
+					/* done. */
+				}
+			}
+			
+		</script>
+	</head>
+	<body>
+		<h1>Tests: String.toTitleCase()</h1>
+		<main>
+			<p>Logging tests to the in-page console:</p>
+			<div id="console"></div>
+		</main>
+		<footer>
+			<p>See page source for the test code and the browser console for additional info.</p>
+		</footer>
+	</body>
+</html>
