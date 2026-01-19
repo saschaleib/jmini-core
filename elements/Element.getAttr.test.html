@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>&lt;HTMLElement&gt;.getAttr() — jMini Test</title>
+		<script src="Element.getAttr.js" type="text/javascript"></script>
+		<script src="Element.setAttr.min.js" type="text/javascript"></script>
+		<script src="Element.append.min.js" type="text/javascript"></script>
+		<script src="HTMLElement.new.min.js" type="text/javascript"></script>
+		<script src="Element.setText.min.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<h1>Tests: <i>&lt;HTMLElement&gt;</i>.getAttr()</h1>
+		<main>
+			<h2><span>Read attributes:</span></h2>
+			<p>
+				Usage: <code><i>&lt;HTMLElement&gt;</i>.<b>attr</b>(name <i>&lt;String&gt;</i>)</code>
+			</p>
+			
+			<p>Read (the 'data-num' attribute is read and added after each item):</p>
+			<ul id="target1">
+				<li data-num="1">First</li>
+				<li data-num="2">Second</li>
+				<li data-num="3">Third</li>
+				<li data-num="4">Fourth</li>
+				<li data-num="5">Fifth</li>
+				<li data-num="6">Sixt</li>
+				<li data-num="7">Seventh</li>
+				<li data-num="8">Eight</li>
+				<li data-num="9">Nineth</li>
+				<li data-num="10">Tenth</li>
+				<li>None</li>
+			</ul>
+			
+			<p>Write attributes to existing elements (check in element inspector or console):</p>
+			<ul id="target2">
+				<li>First</li>
+				<li>Second</li>
+				<li>Third</li>
+				<li>Fourth</li>
+				<li>Fifth</li>
+				<li>Sixt</li>
+				<li>Seventh</li>
+				<li>Eight</li>
+				<li>Nineth</li>
+				<li>Tenth</li>
+				<li>None</li>
+			</ul>
+		</main>
+		<footer>
+			<p><mark>See console for any errors.</mark></p>
+		</footer>
+		
+		<script type="text/javascript">
+		
+			console.group('Tests: <HTMLElement>.attr()');
+
+			/* read some attributes from target1: */
+			//let trg = document.getElementById('target1');
+			let list1 = document.querySelectorAll('#target1 li')
+			list1.forEach( (li) => {
+				const num = li.getAttr('data-num');
+				li.append(HTMLElement.new('strong', undefined, ` – data-num=“${num}”.`));
+			});
+
+			let list2 = document.querySelectorAll('#target2 li')
+			list2.forEach( (li, num) => {
+				li.setAttr('data-num', num);	
+				console.log(li);
+			});
+
+			/* done. */
+			console.groupEnd();
+
+		</script>
+	</body>
+</html>

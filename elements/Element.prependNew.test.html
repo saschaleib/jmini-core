@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>&lt;HTMLElement&gt;.prependNew() — jMini Test</title>
+		<script src="HTMLElement.new.min.js"></script>
+		<script src="Element.prependNew.js"></script>
+		<script src="Element.setText.min.js"></script>
+		<style>
+			#target1, #target2 { border: red dotted 1px; }
+			#target1 > *, #target2 > * { border: blue dashed 1px; }
+		</style>
+	</head>
+	<body>
+		<h1>Tests: <i>&lt;HTMLElement&gt;</i>.prependNew()</h1>
+		<main>
+			<h2><span>Prepend new object:</span></h2>
+			<p>Note: these are largely the same test as for <a href="Element_cls.new.test.html"><i>&lt;HTMLElement&gt;</i>.new()</a>.</p>
+			<p>
+				Usage: <code><i>&lt;HTMLElement&gt;</i>.<b>prependNew</b>(name <i>&lt;String&gt;</i>)</code>
+			</p>
+			<p>Months:</p>
+			<ul id="target"></ul>
+			<p>Info: as we are <em>pre</em>pending, the items should appear in reverse order.</p>
+			
+		</main>
+		<footer>
+			<p><mark>See console for any errors.</mark></p>
+		</footer>
+		
+		<script type="text/javascript">
+		
+			console.group('Tests: <Element>.new()');
+
+			let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+			let ul = document.getElementById('target');
+			
+			months.forEach( (month, num) => {
+				ul.prependNew('li', {}, num+1 + ' – ' + month);
+			});
+
+			/* done. */
+			console.groupEnd();
+
+		</script>
+	</body>
+</html>

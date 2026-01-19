@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>&lt;HTMLElement&gt;.getHtml() — jMini Test</title>
+		<script src="Element.getHtml.js"></script>
+	</head>
+	<body>
+		<h1>Tests: <i>&lt;Element&gt;</i>.getHtml()</h1>
+		<main>
+			<h2><span>Read HTML:</span></h2>
+			<p>
+				Usage: <code><i>&lt;HTMLElement&gt;</i>.<b>getHtml</b>()</code>
+			</p>
+			
+			<p>Get the innerHTML from the following list:</p>
+			<ul id="src1">
+				<li>First</li>
+				<li>Second</li>
+				<li>Third</li>
+				<li>Fourth</li>
+				<li>Fifth</li>
+				<li>Sixt</li>
+				<li>Seventh</li>
+				<li>Eight</li>
+				<li>Nineth</li>
+				<li>Tenth</li>
+			</ul>
+			<p>The HTML code will be shown here:</p>
+			<textarea id="target1" cols="64" rows="11"></textarea>
+
+		</main>
+		<footer>
+			<p><mark>See console for any errors.</mark></p>
+		</footer>
+		
+		<script type="text/javascript">
+
+			console.group('Tests: <HTMLElement>.getHtml()');
+
+			/* read some attributes from target1: */
+			let src1 = document.getElementById('src1');
+
+			let trg1 = document.getElementById('target1');
+			trg1.value = src1.getHtml();
+
+			/* done. */
+			console.groupEnd();
+
+		</script>
+	</body>
+</html>
