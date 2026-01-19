@@ -5,6 +5,16 @@ jMini is a JavaScript toolbox for lightweight and efficient web development. It 
 
 This repository contains the core jMini files. This is where new functions and objects can be contributed.
 
+## Design Goals
+
+*  Keep it small and simple – and modular!
+* Don't force users to download large files with functions that aren’t actually in use!
+* Code against the standard, not implementation details.
+* Support standard-compliant browsers, not some exotic half-botched implementations that nobody uses anyway.
+* Remove all functions for which there is now a usable equivalent built-in to JavaScript
+  * Exceptions for improved syntax (e.g. chaining support) and/or if plain JS code would be overly verbose.
+* Minimize error checking and failsafes. The developer is still responsible for checking that your code is safe and that exceptions are caught!
+
 ## Contribution Guide
 
 If you would like to contribute a useful JS function, please create a pull request that contains:
