@@ -1,0 +1,61 @@
+{
+	"version": "2025-02-07",
+	"topics": [
+		{
+			"id": "array",
+			"title": "Array",
+			"desc": "Functions for Arrays",
+			"path": "arrays/",
+			"size": 570
+		},
+		{
+			"id": "classes",
+			"title": "Classes",
+			"desc": "Everything related to classes.",
+			"path": "classes/",
+			"size": 320
+		},
+		{
+			"id": "data",
+			"title": "Data",
+			"desc": "Functions for loading and managing data.",
+			"path": "data/",
+			"size": 264
+		},
+		{
+			"id": "elements",
+			"title": "Elements",
+			"desc": "Functions related to DOM Elements.",
+			"path": "elements/",
+			"size": 1478
+		},
+		{
+			"id": "events",
+			"title": "Events",
+			"desc": "Everything related to event handling.",
+			"path": "events/",
+			"size": 700
+		},
+		{
+			"id": "numbers",
+			"title": "Numbers",
+			"desc": "Everything related to numbers.",
+			"path": "number/",
+			"size": 310
+		},
+		{
+			"id": "traversal",
+			"title": "Traversal",
+			"desc": "Functions to traverse the DOM tree",
+			"path": "traversal/",
+			"size": 760
+		},
+		{
+			"id": "page",
+			"title": "$p (page)",
+			"desc": "A simple JS framework for web page functionality",
+			"path": "page/",
+			"size": 3380
+		}
+	]
+}
