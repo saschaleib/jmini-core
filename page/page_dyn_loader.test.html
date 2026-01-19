@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>$page.dyn (dynamic loader core) — jMini Test</title>
+		<script src="./page_core.min.js" type="text/javascript"></script>
+		<script src="./page_dyn_core.min.js" type="text/javascript"></script>
+		<script src="./page_dyn_loader.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<h1>Tests: $p.dyn (dynamic loader core)</h1>
+		<main>
+			<p>This page contains a JSON snippet to activate the page loader. It will attempt to load content snippets into the parent element of the JSON snippet:</p>
+
+			<div id="container" style="border:red dashed 1px;max-width:24em;margin:0 auto;min-height:1em">
+				<script type="application/json"> {
+					"action": "load-page-content",
+					"from": "_content/",
+					"toc": "table-of-contents"
+				} </script>
+			</div>
+
+			<p>The loader can also generate a TOC of the section headings, if reqired. This will be added here:</p>
+			
+			<div id="table-of-contents" style="border:red dashed 1px;max-width:24em;margin:0 auto;min-height:1em">
+			</div>
+			
+		</main>
+		<footer>
+			<p>See page source and browser console for more information.</p>
+		</footer>
+	</body>
+</html>

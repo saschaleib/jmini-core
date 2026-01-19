@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>&lt;Array&gt;.first() — jMini Test</title>
+		<script src="../traversal/Element.getSiblings.min.js"></script>
+		<script src="../events/Document.onReady.min.js"></script>
+		<script src="../elements/HTMLElement.new.min.js"></script>
+		<script src="../elements/Element.appendNew.min.js"></script>
+		<script src="../elements/Element.setText.min.js"></script>
+		<script src="../arrays/Array.toHtml.min.js"></script>
+		<script src="../page/page_core.min.js"></script>
+		<script src="../page/page_console.min.js"></script>
+		<script src="Array.first.js"></script>
+		<link rel="stylesheet" type="text/css" media="all" href="../page/console.css">
+		<script>
+
+			$p.console.init = function(parent) {
+				this.setTarget(document.getElementById('console'));
+			}
+			$p.test = {
+				init: function() {
+					$p.console.group("Array.first() tests");
+					
+					const myArr = ["first", "second", "third", "fourth", "fifth"];
+					$p.console.group('Source array:', false);
+					$p.console.log(myArr);
+					$p.console.groupEnd();
+										
+					$p.console.log('First element: "'+ myArr.first() + '"');
+					$p.console.groupEnd();
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Tests: <i>&lt;Array&gt;</i>.first()</h1>
+		<main>
+			<div id="console"></div>
+		</main>
+		<footer>
+			<ul>
+				<li><a href="http://jmini.kolmio.com/wiki/toolbox/arrays/tohtml/index">Documentation</a>
+			</ul>
+		</footer>
+	</body>
+</html>

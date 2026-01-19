@@ -1,0 +1,32 @@
+[
+	{	"id": "array_first",
+		"name": ".first",
+		"namehtml": "&lt;<i>Array</i>&gt;.<b>first</b>()",
+		"type": "prototype",
+		"desc": "Get the first element of an array",
+		"file": "Array.first",
+		"requires": [],
+		"conflics": [],
+		"moreinfo": "toolbox/arrays/first/index"
+	},
+	{	"id": "array_last",
+		"name": ".last",
+		"namehtml": "&lt;<i>Array</i>&gt;.<b>last</b>()",
+		"type": "prototype",
+		"desc": "Get the last element of an array",
+		"file": "Array.last",
+		"requires": [],
+		"conflics": [],
+		"moreinfo": "toolbox/arrays/last/index"
+	},
+	{	"id": "array_toHtml",
+		"name": ".toHtml",
+		"namehtml": "&lt;<i>Array</i>&gt;.<b>toHtml</b>()",
+		"type": "prototype",
+		"desc": "Returns the array content as HTML table",
+		"file": "Array.toHtml",
+		"requires": ["htmlelement_new","element_appendnew","element_settext"],
+		"conflics": [],
+		"moreinfo": "toolbox/arrays/tohtml/index"
+	}
+]
