@@ -38,6 +38,12 @@
 			"path": "number/"
 		},
 		{
+			"id": "strings",
+			"title": "Strings",
+			"desc": "Additional string functions.",
+			"path": "string/"
+		},
+		{
 			"id": "traversal",
 			"title": "Traversal",
 			"desc": "Functions to traverse the DOM tree",
