@@ -5,8 +5,6 @@
 		"type": "prototype",
 		"desc": "Get the first element of an array",
 		"file": "Array.first",
-		"requires": [],
-		"conflics": [],
 		"moreinfo": "toolbox/arrays/first/index"
 	},
 	{	"id": "array_last",
@@ -15,8 +13,6 @@
 		"type": "prototype",
 		"desc": "Get the last element of an array",
 		"file": "Array.last",
-		"requires": [],
-		"conflics": [],
 		"moreinfo": "toolbox/arrays/last/index"
 	},
 	{	"id": "array_toHtml",
@@ -26,7 +22,6 @@
 		"desc": "Returns the array content as HTML table",
 		"file": "Array.toHtml",
 		"requires": ["htmlelement_new","element_appendnew","element_settext"],
-		"conflics": [],
 		"moreinfo": "toolbox/arrays/tohtml/index"
 	}
 ]

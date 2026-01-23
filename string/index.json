@@ -5,8 +5,6 @@
 		"type": "prototype",
 		"desc": "returns the n rightmost characters in a string",
 		"file": "String.right",
-		"requires": [],
-		"conflics": [],
 		"moreinfo": "toolbox/strings/right/index"
 	},
 	{	"id": "string_totitlecase",
@@ -15,8 +13,6 @@
 		"type": "prototype",
 		"desc": "Converts each word in the String to Title Case",
 		"file": "String.toTitleCase",
-		"requires": [],
-		"conflics": [],
 		"moreinfo": "toolbox/strings/totitlecase/index"
 	}
 ]

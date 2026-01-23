@@ -5,8 +5,6 @@
 		"type": "prototype",
 		"desc": "Get an array of ancestors, possibly filtered via a callback function",
 		"file": "Element.getAncestors",
-		"requires": [],
-		"conflics": [],
 		"moreinfo": "toolbox/traversal/getancestors/index"
 	},
 	{	"id": "element_getsiblings",
@@ -15,8 +13,6 @@
 		"type": "prototype",
 		"desc": "Get an array of siblings (without the element itself), possibly filtered via a callback function",
 		"file": "Element.getSiblings",
-		"requires": [],
-		"conflics": [],
 		"moreinfo": "toolbox/traversal/getsiblings/index"
 	},
 	{	"id": "element_getchildren",
@@ -25,8 +21,6 @@
 		"type": "prototype",
 		"desc": "Get an array of immediate child elements, possibly filtered via a callback function",
 		"file": "Element.getChildren",
-		"requires": [],
-		"conflics": [],
 		"moreinfo": "toolbox/traversal/getchildren/index"
 	},
 	{	"id": "element_getdescendants",
@@ -35,8 +29,6 @@
 		"type": "prototype",
 		"desc": "Get an array of descendant elements, possibly filtered via a callback function",
 		"file": "Element.getDescendants",
-		"requires": [],
-		"conflics": [],
 		"moreinfo": "toolbox/traversal/getdescendants/index"
 	}
 ]

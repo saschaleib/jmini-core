@@ -5,8 +5,6 @@
 		"type": "static",
 		"desc": "Creates a new HTMLElement.",
 		"file": "HTMLElement.new",
-		"requires": [],
-		"conflics": [],
 		"moreinfo": "toolbox/element/htmlelement_new/index"
 	},
 	{	"id": "element_getattr",
@@ -15,8 +13,6 @@
 		"type": "prototype",
 		"desc": "Returns an attribute value from an HTMLElement.",
 		"file": "Element.getAttr",
-		"requires": [],
-		"conflics": [],
 		"moreinfo": "toolbox/element/getattr/index"
 	},
 	{	"id": "element_setattr",
@@ -25,8 +21,6 @@
 		"type": "prototype",
 		"desc": "Sets an attribute value on an HTMLElement.",
 		"file": "Element.setAttr",
-		"requires": [],
-		"conflics": [],
 		"moreinfo": "toolbox/element/setattr/index"
 	},
 	{	"id": "element_appendtext",
@@ -35,8 +29,6 @@
 		"type": "prototype",
 		"desc": "Returns the text content of an HTMLElement (including all child elements)",
 		"file": "Element.appendText",
-		"requires": [],
-		"conflics": [],
 		"moreinfo": "toolbox/element/appendtext/index"
 	},
 	{	"id": "element_prependtext",
@@ -46,8 +38,6 @@
 		"desc": "Sets the text content of an HTMLElement (overwriting any possible existing child nodes)",
 		"note": "This function does not attempt to parse HTML content. If you need this, see .html instead.",
 		"file": "Element.prependText",
-		"requires": [],
-		"conflics": [],
 		"moreinfo": "toolbox/element/prependtext/index"
 	},
 	{	"id": "element_gettext",
@@ -56,8 +46,6 @@
 		"type": "prototype",
 		"desc": "Returns the text content of an HTMLElement (including all child elements)",
 		"file": "Element.getText",
-		"requires": [],
-		"conflics": [],
 		"moreinfo": "toolbox/element/gettext/index"
 	},
 	{	"id": "element_settext",
@@ -67,8 +55,6 @@
 		"desc": "Sets the text content of an HTMLElement (overwriting any possible existing child nodes)",
 		"note": "This function does not attempt to parse HTML content. If you need this, see .html instead.",
 		"file": "Element.setText",
-		"requires": [],
-		"conflics": [],
 		"moreinfo": "toolbox/element/settext/index"
 	},
 	{	"id": "element_appendnew",
@@ -78,7 +64,6 @@
 		"desc": "creates a new HTMLElement and attaches as a child element (at the end) ",
 		"file": "Element.appendNew",
 		"requires": ["htmlelement_new"],
-		"conflics": [],
 		"moreinfo": "toolbox/element/appendnew/index"
 	},
 	{	"id": "element_prependnew",
@@ -88,7 +73,6 @@
 		"desc": "creates a new HTMLElement and attaches as a child element (at the beginning) ",
 		"file": "Element.prependNew",
 		"requires": ["htmlelement_new"],
-		"conflics": [],
 		"moreinfo": "toolbox/element/prependnew/index"
 	},
 	{	"id": "element_sethtml",
@@ -97,8 +81,6 @@
 		"type": "prototype",
 		"desc": "Parses XHTML code and inserts it inside of an existing HTMLElement (possibly replacing existing child nodes).",
 		"file": "Element.setHtml",
-		"requires": [],
-		"conflics": [],
 		"moreinfo": "toolbox/element/sethtml/index"
 	},
 	{	"id": "element_gethtml",
@@ -107,8 +89,6 @@
 		"type": "prototype",
 		"desc": "Returns the inner HTML of the HTMLElement (including that from child nodes).",
 		"file": "Element.getHtml",
-		"requires": [],
-		"conflics": [],
 		"moreinfo": "toolbox/element/gethtml/index"
 	},
 	{	"id": "element_empty",
@@ -117,8 +97,6 @@
 		"type": "prototype",
 		"desc": "Remove all child nodes of the element",
 		"file": "Element.empty",
-		"requires": [],
-		"conflics": [],
 		"moreinfo": "toolbox/element/empty/index"
 	},
 	{	"id": "element_load",
@@ -127,8 +105,6 @@
 		"type": "prototype",
 		"desc": "Loads an HTML document into an existing element",
 		"file": "Element.load",
-		"requires": [],
-		"conflics": [],
 		"moreinfo": "toolbox/element/load/index"
 	}
 ]

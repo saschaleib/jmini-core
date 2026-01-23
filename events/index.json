@@ -5,8 +5,6 @@
 		"type": "prototype",
 		"desc": "Attaches an event handler to an HTMLElement.",
 		"file": "Element.on",
-		"requires": [],
-		"conflics": [],
 		"moreinfo": "toolbox/event/on/index"
 	},
 	{	"id": "element_once",
@@ -15,8 +13,6 @@
 		"type": "prototype",
 		"desc": "Attaches an event handler to an HTMLElement that will be called at most one time.",
 		"file": "Element.once",
-		"requires": [],
-		"conflics": [],
 		"moreinfo": "toolbox/event/once/index"
 	},
 	{	"id": "element_off",
@@ -25,8 +21,6 @@
 		"type": "prototype",
 		"desc": "Removes an event handler from an HTMLElement.",
 		"file": "Element.off",
-		"requires": [],
-		"conflics": [],
 		"moreinfo": "toolbox/event/off/index"
 	},
 	{	"id": "element_onblur",
@@ -35,8 +29,6 @@
 		"type": "prototype",
 		"desc": "Attaches an event handler to the 'blur' event.",
 		"file": "Element.onBlur",
-		"requires": [],
-		"conflics": [],
 		"moreinfo": "toolbox/event/onblur/index"
 	},
 	{	"id": "element_onclick",
@@ -45,8 +37,6 @@
 		"type": "prototype",
 		"desc": "Attaches an event handler to the 'click' event.",
 		"file": "Element.onClick",
-		"requires": [],
-		"conflics": [],
 		"moreinfo": "toolbox/event/onclick/index"
 	},
 	{	"id": "element_onfocus",
@@ -55,8 +45,6 @@
 		"type": "prototype",
 		"desc": "Attaches an event handler to the 'focus' event.",
 		"file": "Element.onFocus",
-		"requires": [],
-		"conflics": [],
 		"moreinfo": "toolbox/event/onfocus/index"
 	},
 	{	"id": "formelement_onsubmit",
@@ -65,8 +53,6 @@
 		"type": "prototype",
 		"desc": "Attaches an event handler to the 'submit' event of a <form> element.",
 		"file": "Form.onSubmit",
-		"requires": [],
-		"conflics": [],
 		"moreinfo": "toolbox/event/onsubmit/index"
 	},
 	{	"id": "document_onready",
@@ -75,8 +61,6 @@
 		"type": "prototype",
 		"desc": "Attaches an event handler to the 'DOMContentLoaded' event of the document.",
 		"file": "Document.onReady",
-		"requires": [],
-		"conflics": [],
 		"moreinfo": "toolbox/event/onready/index"
 	}
 ]

@@ -5,8 +5,6 @@
 		"type": "prototype",
 		"desc": "Converts a number to a formatted bytes sting using KiB, MiB, etc.",
 		"file": "Number.toBytesString",
-		"requires": [],
-		"conflics": [],
 		"moreinfo": "toolbox/numbers/tobytesstring/index"
 	}
 ]

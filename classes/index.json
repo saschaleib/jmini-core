@@ -5,8 +5,6 @@
 		"type": "prototype",
 		"desc": "Adds a class to the parent HTMLElement.",
 		"file": "Element.addClass",
-		"requires": [],
-		"conflics": [],
 		"moreinfo": "toolbox/classes/addclass/index"
 	},
 	{	"id": "element_removeclass",
@@ -15,8 +13,6 @@
 		"type": "prototype",
 		"desc": "Removes a class from the parent HTMLElement.",
 		"file": "Element.removeClass",
-		"requires": [],
-		"conflics": [],
 		"moreinfo": "toolbox/classes/removeclass/index"
 	},
 	{	"id": "element_toggleclass",
@@ -25,8 +21,6 @@
 		"type": "prototype",
 		"desc": "Toggles a class at the parent HTMLElement.",
 		"file": "Element.toggleClass",
-		"requires": [],
-		"conflics": [],
 		"moreinfo": "toolbox/classes/toggleclass/index"
 	},
 	{	"id": "element_hasclass",
@@ -35,8 +29,6 @@
 		"type": "prototype",
 		"desc": "Checks is a class is assigned to the parent HTMLElement.",
 		"file": "Element.hasClass",
-		"requires": [],
-		"conflics": [],
 		"moreinfo": "toolbox/classes/hasclass/index"
 	}
 ]
