@@ -11,7 +11,7 @@ HTMLElement.prototype.getDescendants = function(cb = undefined) {
 
 			let children = this.childNodes;
 			for (const n of children) {
-				if ( n.nodeType === Node.ELEMENT_NODE ) {
+				  if ( n instanceof HTMLElement && n.nodeType === Node.ELEMENT_NODE ) {
 					r = r.concat(n.getDescendants(cb));
 					if ( !cb || cb(n) ) {
 						r.push(n);
